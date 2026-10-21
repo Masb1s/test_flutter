@@ -1,17 +1,59 @@
-# test_flutter
+# Практична робота №3
 
-A new Flutter project.
+## Дисципліна
 
-## Getting Started
+Програмування для мобільних платформ
 
-This project is a starting point for a Flutter application.
+## Тема
 
-A few resources to get you started if this is your first Flutter project:
+Hello World у Flutter
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Мета роботи
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Ознайомитися з Flutter, налаштувати середовище розробки та створити перший мобільний застосунок
+
+## Хід роботи
+
+У ході виконання практичної роботи було створено застосунок-візитівку розробника на Flutter
+Застосунок містить аватар, ім'я, спеціальність, контактну інформацію та кнопку перемикання теми між світлим і темним режимом
+Для відображення контактів було створено окремий віджет `ContactCard`, який винесено в окремий файл та використано повторно
+
+## Структура проєкту
+
+```text
+lib/
+├── main.dart
+└── widgets/
+    └── contact_card.dart
+```
+
+## Запуск проєкту
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Hot Reload
+
+Було перевірено роботу Hot Reload за допомогою клавіші `r`
+Після внесення змін до інтерфейсу застосунок оновлювався без повного перезапуску
+
+## Hot Restart
+
+Було перевірено роботу Hot Restart за допомогою клавіші `R`
+Після перезапуску стан застосунку скидався до початкового
+
+## Труднощі
+
+Під час виконання роботи виникли проблеми з запуском Android емулятора та налаштуванням Android SDK
+Після встановлення необхідних компонентів середовище було успішно налаштоване та застосунок запущено на емуляторі
+
+## Скриншоти
+
+Скріншоти роботи програми та результатів перевірки знаходяться в каталозі `docs`
+
+## Висновок
+
+Під час виконання роботи було налаштовано Flutter, створено власний застосунок-візитівку та перевірено роботу Hot Reload і Hot Restart
+Застосунок успішно запускається на Android емуляторі та відповідає вимогам завдання
